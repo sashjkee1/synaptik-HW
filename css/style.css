@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mulish:wght@400;500&display=swap');
 html {
-    background-image: url(./img/table.png);
+    background-image: url(../img/table.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
