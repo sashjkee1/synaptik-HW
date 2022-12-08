@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Mulish:wght@400;500&display=swap');
+html {
+    background-image: url(../img/table.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+.container {
+    position: relative;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    
+    font-size: 144px;
+    line-height: 175.54px;
+    margin: 434px 0 40px 0;
+    font-weight: 400;
+}
+.info {
+    margin: 0 auto 80px auto;
+    font-size: 48px;
+    width: 700px;
+}
+
+
+.button {
+    text-decoration: none;
+    position: relative; 
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 150px;
+}
+
+.button__text {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    width: 281px;
+    height: 56px;
+ }
+
+ .button__text:before,
+ .button__text:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 1px solid  white;
+ }
+
+ .button__text:before {
+    left: 0;
+    z-index: 2;
+    border-right: none;
+ }
+.button__text:after {
+    right: 0;
+    border-left: none;
+}
+.button__text span, img {
+    position: relative;
+    z-index: 2;
+}
+
+.button:hover {
+    background-color: rgb(145, 141, 141);
+    transition: 0.4s ease 0s;
+}
+
+
+/*Responsive*/ 
+
+@media screen and (max-width: 1366px) {
+    .header {
+        margin-top: 183px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin-top: 331px;
+    }
+    .button {
+        margin-bottom: 332px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        writing-mode: vertical-rl;
+        font-size: 240px;
+        margin:  41px auto 89px auto;
+    }
+    .info {
+        display: none;
+    }
+
+    .button {
+        margin-bottom: 65px;
+    }
+}
